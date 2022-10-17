@@ -27,15 +27,35 @@ const Services = () => {
 
             {/* Right Side */}
             <div className="cards">
-                <div style={{left: '14rem'}}>
-                    <Card 
-                        emoji = {HeartEmoji}
-                        heading = {"Fundamentals"}
-                        detail = {"DSA, Computer Network, DBMS, Operating System"}
+                <div style={{ left: '14rem' }}>
+                    <Card
+                        emoji={HeartEmoji}
+                        heading={"Fundamentals"}
+                        detail={"DSA, Computer Network, DBMS, Operating System"}
                     />
                 </div>
-            </div>
 
+                {/* 2nd Card */}
+                <div style={{ top: '12rem', left: '-4rem' }}>
+                    <Card
+                        emoji={Glasses}
+                        heading={"Web Development"}
+                        detail={"React, Node, Express, MongoDb"}
+                    />
+                </div>
+
+                {/* 3rd Card */}
+                <div style={{ top: '19rem', left: '12rem' }}>
+                    <Card
+                        emoji={Humble}
+                        heading={"Blockchain Development"}
+                        detail={"Rust, Solidity"}
+                    />
+                </div>
+
+                <div className="blur s-blur2" style={{ background: "var(--purple)" }}>
+                </div>
+            </div>
         </div>
     )
 }
