@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
 import "./Services.css";
+import Card from "../Card/Card";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
@@ -26,12 +27,12 @@ const Services = () => {
 
             {/* Right Side */}
             <div className="cards">
-                <div>
-                    {/* <Card 
+                <div style={{left: '14rem'}}>
+                    <Card 
                         emoji = {HeartEmoji}
-                        heading = {'Fundamentals'}
+                        heading = {"Fundamentals"}
                         detail = {"DSA, Computer Network, DBMS, Operating System"}
-                    /> */}
+                    />
                 </div>
             </div>
 
