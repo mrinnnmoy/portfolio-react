@@ -21,21 +21,20 @@ const Intro = () => {
                     <span>Hi, I am</span>
                     <span>Mrinmoy Porel</span>
                     <span> A senior pursuing my Bachelors in Electronics & Comm. Engg.
-                        I am passionate about Web & BlockChain development & I enjoy learning
-                        new things.
+                        I am a self-taught programmer, trying to figure out how IT works.
                     </span>
                 </div>
                 <button className="button i-button">
                     Hire me
                 </button>
                 <div className="i-icons">
-                    <a href="https://github.com/mrinnnmoy">
+                    <a href="https://github.com/mrinnnmoy" target="_blank">
                         <img src={GitHub} alt="github-logo" />
                     </a>
-                    <a href="https://www.linkedin.com/in/mrinnnmoy/">
+                    <a href="https://www.linkedin.com/in/mrinnnmoy/" target="_blank">
                         <img src={LinkedIn} alt="linkedin-logo" />
                     </a>
-                    <a href="./instagram.com/">
+                    <a href="https://instagram.com/" target="_blank">
                         <img src={Instagram} alt="instagram-logo" />
                     </a>
                 </div>
