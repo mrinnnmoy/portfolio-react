@@ -47,7 +47,7 @@ const Testimonials = () => {
             >
                 {clients.map((client, index) => {
                     return (
-                        <SwiperSlide >
+                        <SwiperSlide key={index} >
                             <div className="testimonial">
                                 <img src={client.img} alt="client-img" />
                                 <span>{client.review}</span>
