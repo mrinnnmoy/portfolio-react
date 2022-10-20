@@ -7,7 +7,7 @@ const Contact = () => {
             {/* Left side */}
             <div className="w-left">
                 <div className="awesome">
-                    <span>Get in Touch.</span>
+                    <span>Get in Touch,</span>
                     <span>Contact me.</span>
                     <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
                 </div>
@@ -18,8 +18,8 @@ const Contact = () => {
                 <form>
                     <input type="text" name="user_name" className="user" placeholder="Name" />
                     <input type="email" name="user_email" className="user" placeholder="Email" />
-                    <textarea name="message" className="user" placeholder="message" />
-                    <input type="submit" value="send" className="button" />
+                    <textarea name="message" className="user" placeholder="Message" />
+                    <input type="submit" value="Send" className="button" />
                     <div
                         className="blur c-blur1"
                         style={{ background: "var(--purple)" }}
