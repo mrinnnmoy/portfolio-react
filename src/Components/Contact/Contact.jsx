@@ -1,7 +1,23 @@
 import React from 'react';
 import "./Contact.css";
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_vs2e1rn', 'template_v4fdaur', form.current, 'DDAYPhlrBahU0jlXa')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+
     return (
         <div className="contact-form">
             {/* Left side */}
@@ -15,7 +31,7 @@ const Contact = () => {
 
             {/* Right side */}
             <div className="c-right">
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name="user_name" className="user" placeholder="Name" />
                     <input type="email" name="user_email" className="user" placeholder="Email" />
                     <textarea name="message" className="user" placeholder="Message" />
