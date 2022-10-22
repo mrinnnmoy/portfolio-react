@@ -1,4 +1,4 @@
-.works{
+.works {
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 90vh;
@@ -6,31 +6,31 @@
 }
 
 /* Left-side */
-.awesome{
+.awesome {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.awesome > :nth-child(1){
+.awesome> :nth-child(1) {
     color: var(--black);
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.awesome > :nth-child(2){
+.awesome> :nth-child(2) {
     color: var(--orange);
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.awesome > :nth-child(3){
+.awesome> :nth-child(3) {
     color: var(--gray);
     font-size: .9rem;
     margin-top: 1rem;
 }
 
-.s-button{
+.s-button {
     width: 8rem;
     height: 2rem;
     margin-top: 4rem;
@@ -96,8 +96,25 @@
     background: white;
 }
 
-.w-secCircle>img {
+/* Images */
+.w-twitter {
+    transform: scale(0.275);
+}
+
+.w-sde {
+    transform: scale(0.64);
+}
+
+.w-linkedin {
     transform: scale(0.6);
+}
+
+.w-github {
+    transform: scale(0.54);
+}
+
+.w-hashnode {
+    transform: scale(0.47);
 }
 
 .w-backCircle {

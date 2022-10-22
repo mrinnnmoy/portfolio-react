@@ -31,19 +31,19 @@ const Works = () => {
                 <div className="w-mainCircle">
 
                     <div className="w-secCircle">
-                        <img src={GitHub} alt="upwork-logo" />
+                        <img src={Twitter} className="w-twitter" alt="twitter-logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Hashnode} alt="upwork-logo" />
+                        <img src={Hashnode} className="w-hashnode" alt="hashnode-logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={SDE} alt="sde-logo" />
+                        <img src={SDE} className="w-sde" alt="sde-logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={LinkedIn} alt="upwork-logo" />
+                        <img src={LinkedIn} className="w-linkedin" alt="linkedin-logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Twitter} alt="upwork-logo" />
+                        <img src={GitHub} className="w-github" alt="github-logo" />
                     </div>
                 </div>
                 {/* Bg circles */}
