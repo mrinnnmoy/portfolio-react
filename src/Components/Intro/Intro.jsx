@@ -7,9 +7,9 @@ import glassesemoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
-import GitHub from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
+import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
+import Github from "@iconscout/react-unicons/icons/uil-github";
 
 
 const Intro = () => {
@@ -20,23 +20,18 @@ const Intro = () => {
                 <div className="i-name">
                     <span>Hi, I am</span>
                     <span>Mrinmoy Porel</span>
-                    <span> A senior pursuing my Bachelors in Electronics & Comm. Engg.
-                        I am a self-taught programmer, trying to figure out how IT works.
+                    <span> A senior pursuing my Bachelors in Electronics & Comm. Engg. I am
+                        <br />
+                        a self-taught programmer, trying to figure out how IT works.
                     </span>
                 </div>
                 <button className="button i-button">
                     Hire me
                 </button>
                 <div className="i-icons">
-                    <a href="https://github.com/mrinnnmoy" >
-                        <img src={GitHub} alt="github-logo" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/mrinnnmoy/">
-                        <img src={LinkedIn} alt="linkedin-logo" />
-                    </a>
-                    <a href="https://instagram.com/" >
-                        <img src={Instagram} alt="instagram-logo" />
-                    </a>
+                    <Linkedin color="orange" size={"5rem"} />
+                    <Twitter color="orange" size={"5rem"} />
+                    <Github color="orange" size={"5rem"} />
                 </div>
             </div>
             <div className="i-right">

@@ -17,7 +17,7 @@ const Services = () => {
                 <span>
                     I am passionate about Web & BlockChain development &
                     <br />
-                    I enjoy learning new things.
+                    enjoy learning new things.
                 </span>
                 <a href={Resume} download>
                     <button className="button s-button">Download CV</button>
