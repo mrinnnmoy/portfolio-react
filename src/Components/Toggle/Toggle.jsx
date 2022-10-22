@@ -5,7 +5,7 @@ import Sun from "@iconscout/react-unicons/icons/uil-sun";
 
 const Toggle = () => {
   return (
-    <div className='toggle'>
+    <div className="toggle">
         <Moon />
         <Sun />
       
