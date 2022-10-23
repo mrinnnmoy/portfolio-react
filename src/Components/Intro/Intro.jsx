@@ -37,10 +37,17 @@ const Intro = () => {
                 <button className="button i-button">
                     Hire me
                 </button>
+                
                 <div className="i-icons">
-                    <Linkedin color="orange" size={"5rem"} />
-                    <Twitter color="orange" size={"5rem"} />
-                    <Github color="orange" size={"5rem"} />
+                    <a href="https://github.com/mrinnnmoy">
+                        <Github color="orange" size={"5rem"} />
+                    </a>
+                    <a href="https://linkedin.com/in/mrinnnmoy">
+                        <Linkedin color="orange" size={"5rem"} />
+                    </a>
+                    <a href="https://twitter.com/mrinnnmoy">
+                        <Twitter color="orange" size={"5rem"} />
+                    </a>
                 </div>
             </div>
             <div className="i-right">
@@ -69,11 +76,13 @@ const Intro = () => {
                     <FloatingDiv image={thumbup} txt1='Web' txt2='Development' />
                 </motion.div>
                 <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
-                <div className="blur" style={{  background: "#C1F5FF",
-                                                top: "17rem",
-                                                width: "21rem",
-                                                height: "11rem",
-                                                left: "-9rem" }}>
+                <div className="blur" style={{
+                    background: "#C1F5FF",
+                    top: "17rem",
+                    width: "21rem",
+                    height: "11rem",
+                    left: "-9rem"
+                }}>
                 </div>
             </div>
         </div>

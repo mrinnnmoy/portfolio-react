@@ -14,9 +14,15 @@ const Footer = () => {
                     &#169; Mrinmoy Porel. All rights reserved.
                 </span>
                 <div className="f-icons">
-                    <Linkedin color="white" size={"3rem"} />
-                    <Twitter color="white" size={"3rem"} />
-                    <Github color="white" size={"3rem"} />
+                    <a href="https://linkedin.com/in/mrinnnmoy">
+                        <Linkedin color="white" size={"3rem"} />
+                    </a>
+                    <a href="https://twitter.com/mrinnnmoy">
+                        <Twitter color="white" size={"3rem"} />
+                    </a>
+                    <a href="https://github.com/mrinnnmoy">
+                        <Github color="white" size={"3rem"} />
+                    </a>
                 </div>
             </div>
         </div>

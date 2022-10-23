@@ -15,6 +15,11 @@
 .n-name {
     font-size: 1.3rem;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.n-name:hover {
+    color: var(--orange);
 }
 
 /* For right side */
