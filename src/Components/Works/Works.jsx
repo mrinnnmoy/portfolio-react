@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./Works.css";
 import SDE from "../../img/w-sde.png";
 import GitHub from "../../img/w-github.png";
@@ -6,7 +6,7 @@ import LinkedIn from "../../img/w-linkedin.png";
 import Hashnode from "../../img/w-hashnode.png";
 import Twitter from "../../img/w-twitter.png";
 import { themeContext } from "../../Context";
-import { useContext } from 'react';
+import { motion } from "framer-motion";
 
 const Works = () => {
 
@@ -34,7 +34,12 @@ const Works = () => {
 
             {/* Right-side */}
             <div className="w-right">
-                <div className="w-mainCircle">
+                <motion.div
+                    initial={{ rotate: 90 }}
+                    whileInView={{ rotate: 0 }}
+                    viewport={{ margin: "-40px" }}
+                    transition={{ duration: 3.5, type: "spring" }}
+                    className="w-mainCircle">
 
                     <div className="w-secCircle">
                         <img src={Twitter} className="w-twitter" alt="twitter-logo" />
@@ -51,7 +56,7 @@ const Works = () => {
                     <div className="w-secCircle">
                         <img src={GitHub} className="w-github" alt="github-logo" />
                     </div>
-                </div>
+                </motion.div>
                 {/* Bg circles */}
                 <div className="w-backCircle blueCircle"></div>
                 <div className="w-backCircle yellowCircle"></div>

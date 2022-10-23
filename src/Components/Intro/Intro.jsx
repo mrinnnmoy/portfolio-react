@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Intro.css';
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
@@ -11,10 +11,12 @@ import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import { themeContext } from "../../Context";
-import { useContext } from 'react';
+import { motion } from "framer-motion";
 
 
 const Intro = () => {
+    // Transition
+    const transition = { duration: 2, type: "spring" };
 
     // Context
     const theme = useContext(themeContext);
@@ -45,15 +47,34 @@ const Intro = () => {
                 <img src={Vector1} alt="vector-1" />
                 <img src={Vector2} alt="vector-2" />
                 <img src={boy} alt="profile-img" />
-                <img src={glassesemoji} alt="glasses-emoji" />
-                <div className="floating-1">
+                {/* Animation */}
+                <motion.img initial={{ left: "-36%" }}
+                    whileInView={{ left: "-24%" }}
+                    transition={{ transition }}
+                    src={glassesemoji}
+                    alt="glasses-emoji"
+                />
+                <motion.div
+                    initial={{ top: "-4%", left: "74%" }}
+                    whileInView={{ left: "68%" }}
+                    transition={{ transition }}
+                    className="floating-1">
                     <FloatingDiv image={crown} txt1='Software' txt2='Engineering' />
-                </div>
-                <div className="floating-2">
+                </motion.div>
+                <motion.div
+                    initial={{ left: "9rem", top: "18rem" }}
+                    whileInView={{ left: "0rem" }}
+                    transition={transition}
+                    className="floating-2">
                     <FloatingDiv image={thumbup} txt1='Web' txt2='Development' />
-                </div>
+                </motion.div>
                 <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
-                <div className="blur" style={{ background: "#C1F5FF", top: "17rem", width: "21rem", height: "11rem", left: "-9rem" }}></div>
+                <div className="blur" style={{  background: "#C1F5FF",
+                                                top: "17rem",
+                                                width: "21rem",
+                                                height: "11rem",
+                                                left: "-9rem" }}>
+                </div>
             </div>
         </div>
     );
