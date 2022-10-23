@@ -7,6 +7,7 @@ import Hashnode from "../../img/w-hashnode.png";
 import Twitter from "../../img/w-twitter.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Works = () => {
 
@@ -15,7 +16,7 @@ const Works = () => {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div className="works">
+        <div className="works" id="works">
             {/* Left side */}
             <div className="awesome">
                 <span style={{ color: darkMode ? "white" : "" }}>Works from All </span>
@@ -28,7 +29,9 @@ const Works = () => {
                     and even started my own blog.
                     <br />
                 </span>
-                <button className="button s-button">Hire me</button>
+                <Link to="contact" smooth={true} spy={true}>
+                    <button className="button s-button">Hire me</button>
+                </Link>
                 <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
             </div>
 
