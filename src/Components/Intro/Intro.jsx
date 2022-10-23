@@ -10,15 +10,22 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
 import Github from "@iconscout/react-unicons/icons/uil-github";
+import { themeContext } from "../../Context";
+import { useContext } from 'react';
 
 
 const Intro = () => {
+
+    // Context
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="Intro" id="Intro">
             {/* Left name side */}
             <div className="i-left">
                 <div className="i-name">
-                    <span>Hi, I am</span>
+                    <span style={{ color: darkMode ? "white" : "" }}>Hi, I am</span>
                     <span>Mrinmoy Porel</span>
                     <span> A senior pursuing my Bachelors in Electronics & Comm. Engg. I am
                         <br />

@@ -5,14 +5,20 @@ import GitHub from "../../img/w-github.png";
 import LinkedIn from "../../img/w-linkedin.png";
 import Hashnode from "../../img/w-hashnode.png";
 import Twitter from "../../img/w-twitter.png";
-
+import { themeContext } from "../../Context";
+import { useContext } from 'react';
 
 const Works = () => {
+
+    // Context
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="works">
             {/* Left side */}
             <div className="awesome">
-                <span>Works from All </span>
+                <span style={{ color: darkMode ? "white" : "" }}>Works from All </span>
                 <span>Socials & Blog.</span>
                 <span>
                     Recently, started posting my learnings on public platforms.

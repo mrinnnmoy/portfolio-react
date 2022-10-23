@@ -5,14 +5,21 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Resume from "./MrinmoyPorel_CV.pdf";
+import { themeContext } from "../../Context";
+import { useContext } from 'react';
 
 const Services = () => {
+
+    // Dark Mode
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="services">
 
             {/* Left side */}
             <div className="awesome">
-                <span>My Technology</span>
+                <span style={{ color: darkMode ? "white" : "" }}>My Technology</span>
                 <span>Skills.</span>
                 <span>
                     I am passionate about Web & BlockChain development &

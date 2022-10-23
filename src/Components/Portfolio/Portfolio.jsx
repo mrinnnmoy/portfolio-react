@@ -6,15 +6,22 @@ import Health from "../../img/healthfix.png";
 import Urban from "../../img/urbanash.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { themeContext } from "../../Context";
+import { useContext } from 'react';
 
 
 const Portfolio = () => {
+
+    // Context
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="portfolio">
             {/* Header */}
             <div className="heading">
                 <span>Portfolio</span>
-                <span>Recent Projects</span>
+                <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
             </div>
 
 
