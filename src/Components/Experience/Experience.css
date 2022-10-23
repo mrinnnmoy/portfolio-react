@@ -47,6 +47,8 @@
 /* Media Breakpoints */
 @media screen and (max-width: 480px) {
     .experience{
+        height: 35vh;
+        gap: 3rem;
         transform: scale(0.7);
     }
 }

@@ -29,7 +29,6 @@ const Services = () => {
                 <span>Skills.</span>
                 <span>
                     I am passionate about Web & BlockChain development &
-                    <br />
                     enjoy learning new things.
                 </span>
                 <a href={Resume} download>
@@ -68,7 +67,7 @@ const Services = () => {
                     <Card
                         emoji={Humble}
                         heading={"Blockchain Development"}
-                        detail={"Fundamentals, Cryptograhy, Solidity, web3.js, IPFS, Hardhat"}
+                        detail={"Fundamentals, Solidity, web3.js, IPFS, Hardhat"}
                     />
                 </motion.div>
 

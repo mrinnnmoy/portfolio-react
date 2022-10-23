@@ -23,11 +23,8 @@ const Works = () => {
                 <span>Socials & Blog.</span>
                 <span>
                     Recently, started posting my learnings on public platforms.
-                    <br />
                     Also started building publically and contributing to Open-source projects,
-                    <br />
                     and even started my own blog.
-                    <br />
                 </span>
                 <Link to="contact" smooth={true} spy={true}>
                     <button className="button s-button">Hire me</button>

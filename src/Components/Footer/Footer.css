@@ -30,6 +30,9 @@
 /* Media Breakpoints */
 @media screen and (max-width: 480px) {
     .f-content {
-        transform: scale(.5);
+        transform: scale(.6);
+    }
+    .footer__copy{
+        font-size: 1.5rem;
     }
 }

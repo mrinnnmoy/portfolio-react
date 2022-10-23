@@ -124,18 +124,41 @@
         height: 64rem;
     }
 
-    .i-right {
-        transform: scale(0.8);
-        left: -3rem;
+    .i-right>:nth-child(1) {
+        transform: scale(0.5);
+        left: -30%;
+        top: 5%;
+    }
+
+    .i-right>:nth-child(2) {
+        transform: scale(0.4);
+        left: -31%;
+        top: -9%;
+    }
+
+    .i-right>:nth-child(3) {
+        /* display: none; */
+        transform: scale(0.25);
+        left: -54%;
+        top: -50%;
+    }
+
+    .i-right>:nth-child(4) {
+        transform: scale(.5);
+        top: 0%;
     }
 
     .i-right .blur {
         display: none;
     }
 
-    .floating-div:nth-of-type(1) {
-        /* display: none; */
-        top: -7rem !important;
-        ;
+    .floating-1{
+        transform: scale(.6);
+        bottom: 15%;
+        right: -13%;
+    }
+
+    .floating-2{
+        transform: scale(0.75);
     }
 }

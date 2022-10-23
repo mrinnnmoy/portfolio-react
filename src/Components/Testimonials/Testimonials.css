@@ -83,6 +83,12 @@
         padding: 0;
     }
 
+    .t-heading {
+        align-self: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
     .testimonial>img {
         width: 70px;
         height: 70px;

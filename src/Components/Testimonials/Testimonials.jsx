@@ -33,7 +33,7 @@ const Testimonials = () => {
     return (
         <div className="t-wrapper">
             <div className="t-heading">
-                <span>Open-Source Projects</span>
+                <span>Open-Source</span>
                 <span>Exceptional Work</span>
                 <span>by me...</span>
                 <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
