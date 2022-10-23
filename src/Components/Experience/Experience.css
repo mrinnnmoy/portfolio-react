@@ -43,3 +43,10 @@
 .achievement span:nth-of-type(2) {
     color: var(--orange);
 }
+
+/* Media Breakpoints */
+@media screen and (max-width: 480px) {
+    .experience{
+        transform: scale(0.7);
+    }
+}

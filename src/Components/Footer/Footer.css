@@ -26,3 +26,10 @@
 .f-icons:hover {
     cursor: pointer;
 }
+
+/* Media Breakpoints */
+@media screen and (max-width: 480px) {
+    .f-content {
+        transform: scale(.5);
+    }
+}

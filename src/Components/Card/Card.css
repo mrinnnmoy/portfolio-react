@@ -39,3 +39,10 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+
+/* media breakpoints */
+@media screen and (max-width: 480px){
+    .card{
+        width: auto;
+    }
+}
